@@ -1,0 +1,60 @@
+/* body{
+    background-image: url("https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10%;
+    padding-bottom: 26%;
+}
+.pos{
+    padding-top: 10%;
+    margin-bottom: 5%;
+    
+}
+
+
+.whitebackground{
+    background-color:#0a0e45;
+    opacity: 0.9;
+    padding: 5%;
+    width: 40%;
+}*/
+.quizhead{
+    font-family: 'Courgette', cursive;
+    color: white;
+
+}
+.spacing{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+#input1{
+    width: 90%;
+    height: 35px;
+    right: 2px;
+   
+} 
+.formstyle{
+    padding: 15%;
+    
+    margin-top: 40%;
+    background-color:#0a0e45;
+    
+    margin-bottom: 56%;
+    box-shadow: 6px 4px 8px grey;
+   
+}
+
+.bpos{
+    width: 90%;
+    }
+/* body{
+    background-image: url("https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+.leftgap{
+    position: relative;
+    left: 85%;
+}

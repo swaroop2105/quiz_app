@@ -1,0 +1,18 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10%;
+    padding-bottom: 26%;
+}
+.whitebackground{
+    background-color: white;
+    padding: 5%;
+}
+.quizhead{
+    font-family: 'Courgette', cursive;
+}
+.score{
+    font-family: 'Gelasio', serif;
+}

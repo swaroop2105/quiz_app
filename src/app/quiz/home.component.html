@@ -1,0 +1,37 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+
+            </div>
+            <div class="col-lg-4">
+                <form [formGroup]="user" class="formstyle text-center">
+                    <h1 class="quizhead ml-2">Quiz-App</h1>
+                    
+                    <p class="spacing">
+                        <i class="far fa-envelope leftgap"></i>
+                    <input type="email"   [formControl]="email" placeholder="Email-id " id="input1">
+                    </p>
+                   
+                    <p class="spacing">
+                        <i class="fas fa-lock leftgap"></i> 
+                    <input type="password" [formControl]="password" placeholder="Password" id="input1">
+                    </p>
+                    <button class="bpos btn btn-warning ml-3" (click)="enterquiz()">Take Quiz</button>
+                    </form>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+<!-- 
+    <h1 class="quizhead">Quiz-App</h1>
+ -->
+

@@ -1,0 +1,78 @@
+<!-- <label for="">q1  <i class="far fa-dot-circle"></i> </label>
+<label for="">q2  <i class="far fa-dot-circle" [style.color]="answer ? 'red': 'green' "></i> </label>
+<label for="">q3  <i class="far fa-dot-circle"></i> </label>
+<label for="">q4  <i class="far fa-dot-circle"></i> </label> -->
+
+<!-- <div class="container">
+<h1 class="mt-5">Question #02</h1>
+  <p *ngIf="secondaryDisplay">you already answered this question</p>
+  <h1 *ngIf="errorshow" class="colred">oops your answer is wrong !!! the correct answer is {{value.answer}}</h1>
+  <img *ngIf="errorshow" src="https://media1.tenor.com/images/5ac089819161ca76aae5f9e84f107e7b/tenor.gif?itemid=14296377" alt="">
+  <h1 *ngIf="primaryDisplay">your answer is correct</h1>
+  <img *ngIf="primaryDisplay" src="https://media2.giphy.com/media/l4q7TIW8nEZYOJUf6/giphy.gif" alt="">
+  <div *ngIf="primaryLock">
+<div *ngIf="secondaryLock">
+<h3>{{value.question}}</h3>
+<form #quizoption="ngForm" (ngSubmit)="result(quizoption)">
+  <input type="radio" name="option" class="sidegap" value="{{value.options[0]}}" [(ngModel)]="option" ng-init="option='null'">
+  <label for="1">{{value.options[0]}}</label>
+    
+    <br>
+    <input type="radio" name="option" class="sidegap" value="{{value.options[1]}}" [(ngModel)]="option" ng-init="option='null'">
+    <label for="1">{{value.options[1]}}</label>
+      
+      <br>
+      <input type="radio" name="option" class="sidegap" value="{{value.options[2]}}" [(ngModel)]="option" ng-init="option='null'">
+      <label for="1">{{value.options[2]}}</label>
+       <p *ngIf="withoutoption">please select an answer before submiting</p>
+        <br>
+        <button class="btn btn-success" >submit</button>
+        <br>
+        <br>
+      </form>
+    </div>
+  </div>
+    <button class="btn btn-primary mr-3" [routerLink]="['/question1']" routerLinkActive="router-link-active" >pre-question</button>
+    <button class="btn btn-warning" (click)="nextque()">next-question</button>
+  </div> -->
+  <body>
+  
+
+    <div class="container">
+    <div class="whitebackground animated bounceInLeft delay-0.7s">
+    <h1 class="mt-5  animated bounce delay-1s qstyle">Question #02</h1>
+      <p *ngIf="secondaryDisplay" class="animated bounce delay-0.7s">you already answered this question</p>
+      <h5 *ngIf="errorshow" class="colred animated bounce delay-0.7s">oops your answer is wrong !!! the correct answer is {{value.answer}}</h5>
+      <img *ngIf="errorshow" src="https://media1.tenor.com/images/5ac089819161ca76aae5f9e84f107e7b/tenor.gif?itemid=14296377" alt="">
+      <h5 *ngIf="primaryDisplay" class="colgreen animated lightSpeedIn delay-0.7s">your answer is correct</h5>
+      <img *ngIf="primaryDisplay" src="https://media2.giphy.com/media/l4q7TIW8nEZYOJUf6/giphy.gif" alt="">
+      <div *ngIf="primaryLock">
+    <div *ngIf="secondaryLock">
+    <h3 class="animated slideInLeft delay-0.7s questyle">{{value.question}}</h3>
+    <form #quizoption="ngForm" (ngSubmit)="result(quizoption)">
+      <input type="radio" name="option" class="sidegap" value="{{value.options[0]}}" [(ngModel)]="option" ng-init="option='null'">
+      <label for="1" class="animated slideInRight delay-1.1s">{{value.options[0]}}</label>
+        
+        <br>
+        <input type="radio" name="option" class="sidegap" value="{{value.options[1]}}" [(ngModel)]="option" ng-init="option='null'">
+        <label for="1" class="animated slideInRight delay-1.2s">{{value.options[1]}}</label>
+          
+          <br>
+          <input type="radio" name="option" class="sidegap" value="{{value.options[2]}}" [(ngModel)]="option" ng-init="option='null'">
+          <label for="1" class="animated slideInRight delay-1.4s">{{value.options[2]}}</label>
+           <p *ngIf="withoutoption" class="errorMessage animated heartBeat delay-0.5s">please select an answer before submiting</p>
+            <br>
+            <button class="btn btn-primary mt-3" >submit</button>
+            <br>
+            <br>
+          </form>
+        </div>
+      </div>
+      <div class="text-right">
+        <button class="btn btn-primary mr-3" [routerLink]="['/question1']" routerLinkActive="router-link-active" >pre-question</button>
+        <button class="btn btn-success justify-content-right" (click)="nextque()">next-question</button>
+      </div>
+      
+      </div>
+      </div>
+    </body>
